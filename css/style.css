@@ -2,3 +2,9 @@
   background-color: green;
   width: 100px;
 }
+#die_events{
+  display: none;
+}
+#main{
+  display: none;
+}

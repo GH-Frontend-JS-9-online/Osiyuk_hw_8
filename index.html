@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <div class="main">
+    <div class="level" id="levels">
+      <button onclick="EasyLevel()">easy</button>
+      <button onclick="hardLevel()">Hard</button>
+    </div>
+    <div class="main" id="main">
       <div class="status"><h2>Status</h2>
         <label>Food:</label><div id="food" class="bar"> 100%</div>
         <label>Clean:</label><div id="clean" class="bar"> 100%</div>
@@ -17,7 +21,12 @@
       <button class="button" onclick="Wash()">Wash</button>
       <button class="button" onclick="Run()">Run</button>
       </div>
-      <h3><div id="mensagem"></div></h3>
+      <div class="die_events" id="die_events">
+        <h3>You Lost</h3>
+        <button id="restart" onclick="Restart()">Restart</button>
+        <button onclick="chooseAnother()">ChooseAnother</button>
+      </div>
+      <div id="scoree"></div>
     </div>
     <script src="./js/script.js"></script>
   </body>
